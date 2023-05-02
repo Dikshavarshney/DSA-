@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int fibonacci(int num);
+
+void main()
+{
+	int num, i;
+
+	printf("\tEnter number upto you want to print fibonacci : ");
+	scanf("%d",&num);
+
+	for(i=0; i<=num; i++){
+		printf(" %d",fibonacci(i));
+	}
+	getch();
+}
+
+int fibonacci(int num){
+
+	if(num == 0)
+		return 0;
+	else if(num == 1)
+		return 1;
+	else
+		return fibonacci(num-1)+fibonacci(num-2);
+
+}
+
+
+-------------------------------------------OUTPUT--------------------------------------------------
+Enter number upto you want to print fibonacci : 5
+0 1 1 2 3 5
