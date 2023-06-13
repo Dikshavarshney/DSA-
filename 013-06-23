@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main(){
+    
+    char start[size],finish[size];
+    int *ptr;
+    
+    ptr = (char *) malloc (5 * sizeof(char));
+    char finish[] = malloc (5 * sizeof(char));
+    
+    if(start == NULL){
+        printf("\n Memory not allocated");
+    }
+    
+    printf("\nEnter the elment to start:\n");
+        for(int i=0; i<start[size];i++){
+            scanf("%d",&start[i]);
+        }
+    
+    printf("\nEnter the elment to finish:\n");
+        for(int i=0; i<finish[size];i++){
+            scanf("%d",&start[i]);
+        }    
+}
